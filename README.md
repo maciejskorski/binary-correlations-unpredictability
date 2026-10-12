@@ -1,4 +1,4 @@
-# binary-correlations-unpredictability
+# Bridging Binary Correlations and Unpredictability
 
 Can small correlations certify high unpredictability?
 This repo accompanies *Bridging Binary Correlations and Unpredictability: Sharp Bounds and Insights for TRNG Validation* (Skorski & Günlü).
