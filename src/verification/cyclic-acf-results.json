@@ -1,0 +1,10 @@
+{
+  "N": 100000,
+  "trials": 400,
+  "seed": 20261009,
+  "threshold": 0.01,
+  "linear_min": 0.01112,
+  "cyclic_min": 0.012040000000000004,
+  "linear_below_threshold": 0,
+  "cyclic_below_threshold": 0
+}

@@ -1,0 +1,3 @@
+Output of proof_steps.wl (Wolfram Language kernel, 2026-10-31); order c1..c8c:
+{True, True, True, True, True, {True, True, True}, {{0, 2}, {0, 3}, {0, 4}}, True, True, 1.1541075868771102*^6}
+c7 = {zeroth, first-order} coefficient of max_B |b_B| for m = 1, 2, 3: first order is m+1 (kappa_m = (m+1) theta + O(theta^2)).

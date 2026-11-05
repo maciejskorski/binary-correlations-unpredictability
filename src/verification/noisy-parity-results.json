@@ -1,0 +1,44 @@
+{
+ "eps": 0.01,
+ "delta": 0.003477775028359442,
+ "limit": 0.006955550056718884,
+ "seed": 20261012,
+ "rows": [
+  {
+   "N": 100000,
+   "trials": 20,
+   "sum_over_N_mean": 0.007785,
+   "sum_over_N_min": 0.00084,
+   "margin_mean": 0.36277368348935474,
+   "margin_min": 0.039143210549911114,
+   "rejected": 0
+  },
+  {
+   "N": 1000000,
+   "trials": 20,
+   "sum_over_N_mean": 0.006943199999999999,
+   "sum_over_N_min": 0.004228,
+   "margin_mean": 0.9339985675283262,
+   "margin_min": 0.5687501358897574,
+   "rejected": 5
+  },
+  {
+   "N": 10000000,
+   "trials": 20,
+   "sum_over_N_mean": 0.00702429,
+   "sum_over_N_min": 0.0062712,
+   "margin_mean": 2.7664038047294417,
+   "margin_min": 2.4698114030342246,
+   "rejected": 20
+  },
+  {
+   "N": 100000000,
+   "trials": 4,
+   "sum_over_N_mean": 0.0068879349999999995,
+   "sum_over_N_min": 0.00678908,
+   "margin_mean": 8.024282439258986,
+   "margin_min": 7.909118686910431,
+   "rejected": 4
+  }
+ ]
+}

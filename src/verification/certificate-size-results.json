@@ -1,0 +1,38 @@
+{
+  "alpha": 0.05,
+  "beta_star": 0.003477775028359442,
+  "rows": {
+    "1": {
+      "direct": 1540275,
+      "corr_idealised": 729655
+    },
+    "2": {
+      "direct": 3322277,
+      "corr_idealised": 3392011
+    },
+    "3": {
+      "direct": 7126168,
+      "corr_idealised": 15447803
+    },
+    "4": {
+      "direct": 15212398,
+      "corr_idealised": 69276150
+    },
+    "5": {
+      "direct": 32339415,
+      "corr_idealised": 306963239
+    },
+    "6": {
+      "direct": 68498406,
+      "corr_idealised": 1347099529
+    },
+    "7": {
+      "direct": 144618860,
+      "corr_idealised": 5864956976
+    },
+    "8": {
+      "direct": 304451318,
+      "corr_idealised": 25365105596
+    }
+  }
+}

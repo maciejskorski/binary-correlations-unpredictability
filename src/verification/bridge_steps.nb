@@ -1,0 +1,14 @@
+Notebook[{
+Cell["Sample-to-source bridge: exact checks","Title"],
+Cell["1. h_safe(u) >= 1 + Log2[1 - 2^m u]: with c = 2^m >= 2, v = c u < 1, the step is c u/(1-(c-1)u) <= c u/(1-c u), and 1 + v/(1-v) = 1/(1-v)","Text"],
+Cell["s1 = Reduce[ForAll[{c, u}, c >= 2 && u > 0 && c u < 1, c u/(1 - (c - 1) u) <= c u/(1 - c u)], Reals];\ns2 = Simplify[1 + v/(1 - v) == 1/(1 - v), 0 < v < 1];","Input"],
+Cell["2. Doeblin mixing constant: tau_{j(m+1)+i} <= (1-q)^j with q = (2 pmin)^(m+1) sums to (m+1)/q","Text"],
+Cell["s3 = Simplify[Sum[(m + 1) (1 - q)^j, {j, 0, Infinity}, Assumptions -> 0 < q < 1] == (m + 1)/q, 0 < q < 1];","Input"],
+Cell["3. The simplified form of the radius equals the lemma's: T(4+Sqrt[2nL])/n = T(Sqrt[2L/n]+4/n)","Text"],
+Cell["s4 = Simplify[T (4 + Sqrt[2 n L])/n == T (Sqrt[2 L/n] + 4/n), n > 0 && L > 0 && T > 0];","Input"],
+Cell["4. Fair coins, exact: block chain Z_t=(x_t..x_{t-m}); tau_k = 1 for k<=m, 0 after, so T = m+1","Text"],
+Cell["fairT[m_] := Module[{Z = Tuples[{1, -1}, m + 1], P, idx, Q, T = 0, k = 0, tau},\n  idx = AssociationThread[Z -> Range[Length[Z]]];\n  P = Normal @ SparseArray[Flatten[Table[{i, idx[Prepend[Most[Z[[i]]], y]]} -> 1/2, {i, Length[Z]}, {y, {1, -1}}], 1], {Length[Z], Length[Z]}];\n  Q = IdentityMatrix[Length[Z]];\n  While[True,\n   tau = Max[Flatten[Table[Total[Abs[Q[[i]] - Q[[j]]]]/2, {i, Length[Z]}, {j, i - 1}]], 0];\n   If[tau == 0, Break[]]; T += tau; Q = Q . P; k++];\n  T];\ns5 = AllTrue[Range[1, 3], fairT[#] == # + 1 &];","Input"],
+Cell["5. AIS level 0.98 (deficit 0.02), m=1, T=2, alpha=0.01: samples needed for e (+ typical fair khat) <= v*/2","Text"],
+Cell["vs = 1 - 2^(-1/50); km = vs/2; LL = Log[8/0.01];\nemax3 = NIntegrate[3 x Sqrt[2/Pi] Exp[-x^2/2] Erf[x/Sqrt[2]]^2, {x, 0, Infinity}];\nnRadius = N[(2 Sqrt[2 LL]/km)^2]; nTypical = N[((2 Sqrt[2 LL] + emax3)/km)^2];","Input"],
+Cell["Association[\"hsafe step\" -> s1, \"1+v/(1-v)\" -> s2, \"Doeblin sum\" -> s3, \"radius form\" -> s4,\n  \"fair T = m+1 (m=1..3)\" -> s5, \"v*\" -> N[vs], \"E max of 3 |N(0,1)|\" -> emax3,\n  \"N radius only\" -> nRadius, \"N typical fair khat\" -> nTypical]","Input"]
+}]

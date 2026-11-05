@@ -1,0 +1,98 @@
+[
+ {
+  "m": 1,
+  "gamma": 0.001,
+  "h_exact": 0.99712,
+  "h_closed": 0.99712,
+  "kappa": 0.001,
+  "ok": true
+ },
+ {
+  "m": 1,
+  "gamma": 0.01,
+  "h_exact": 0.97171,
+  "h_closed": 0.97171,
+  "kappa": 0.01,
+  "ok": true
+ },
+ {
+  "m": 1,
+  "gamma": 0.03,
+  "h_exact": 0.91832,
+  "h_closed": 0.91832,
+  "kappa": 0.03,
+  "ok": true
+ },
+ {
+  "m": 2,
+  "gamma": 0.001,
+  "h_exact": 0.99426,
+  "h_closed": 0.99426,
+  "kappa": 0.001,
+  "ok": true
+ },
+ {
+  "m": 2,
+  "gamma": 0.01,
+  "h_exact": 0.94503,
+  "h_closed": 0.94503,
+  "kappa": 0.01,
+  "ok": true
+ },
+ {
+  "m": 2,
+  "gamma": 0.03,
+  "h_exact": 0.84932,
+  "h_closed": 0.84932,
+  "kappa": 0.03,
+  "ok": true
+ },
+ {
+  "m": 3,
+  "gamma": 0.001,
+  "h_exact": 0.98858,
+  "h_closed": 0.98858,
+  "kappa": 0.001,
+  "ok": true
+ },
+ {
+  "m": 3,
+  "gamma": 0.01,
+  "h_exact": 0.89598,
+  "h_closed": 0.89598,
+  "kappa": 0.01,
+  "ok": true
+ },
+ {
+  "m": 3,
+  "gamma": 0.03,
+  "h_exact": 0.73895,
+  "h_closed": 0.73895,
+  "kappa": 0.03,
+  "ok": true
+ },
+ {
+  "m": 4,
+  "gamma": 0.001,
+  "h_exact": 0.97744,
+  "h_closed": 0.97744,
+  "kappa": 0.001,
+  "ok": true
+ },
+ {
+  "m": 4,
+  "gamma": 0.01,
+  "h_exact": 0.81207,
+  "h_closed": 0.81207,
+  "kappa": 0.01,
+  "ok": true
+ },
+ {
+  "m": 4,
+  "gamma": 0.03,
+  "h_exact": 0.58745,
+  "h_closed": 0.58745,
+  "kappa": 0.03,
+  "ok": true
+ }
+]

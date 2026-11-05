@@ -1,0 +1,98 @@
+{
+  "cycle_checks": {
+    "1": {
+      "minimum_lambda_sampled": 0.35337212656187145,
+      "tested_directions": 100,
+      "minimum_margin": 0.0022663148183101403
+    },
+    "2": {
+      "minimum_lambda_sampled": 0.35883652711299857,
+      "tested_directions": 100,
+      "minimum_margin": 0.0036117326743681927
+    },
+    "3": {
+      "minimum_lambda_sampled": 0.321077617647517,
+      "tested_directions": 100,
+      "minimum_margin": 0.0024013352039236394
+    },
+    "4": {
+      "minimum_lambda_sampled": 0.3608912873014331,
+      "tested_directions": 100,
+      "minimum_margin": 0.002609453835376283
+    }
+  },
+  "sharp_lower_construction": {
+    "1": [
+      {
+        "theta": 0.0001,
+        "loss_over_kappa": 0.7213835866183181,
+        "limit": 0.7213475204444817
+      },
+      {
+        "theta": 1e-06,
+        "loss_over_kappa": 0.7213478811181216,
+        "limit": 0.7213475204444817
+      }
+    ],
+    "2": [
+      {
+        "theta": 0.0001,
+        "loss_over_kappa": 0.4810506135407789,
+        "limit": 0.48089834696298783
+      },
+      {
+        "theta": 1e-06,
+        "loss_over_kappa": 0.480899869805963,
+        "limit": 0.48089834696298783
+      }
+    ],
+    "3": [
+      {
+        "theta": 0.0001,
+        "loss_over_kappa": 0.36098925338015436,
+        "limit": 0.36067376022224085
+      },
+      {
+        "theta": 1e-06,
+        "loss_over_kappa": 0.3606769161080027,
+        "limit": 0.36067376022224085
+      }
+    ],
+    "4": [
+      {
+        "theta": 0.0001,
+        "loss_over_kappa": 0.2891012219506789,
+        "limit": 0.28853900817779266
+      },
+      {
+        "theta": 1e-06,
+        "loss_over_kappa": 0.28854463464469,
+        "limit": 0.28853900817779266
+      }
+    ],
+    "5": [
+      {
+        "theta": 0.0001,
+        "loss_over_kappa": 0.24139714796651282,
+        "limit": 0.24044917348149392
+      },
+      {
+        "theta": 1e-06,
+        "loss_over_kappa": 0.24045867104351423,
+        "limit": 0.24044917348149392
+      }
+    ],
+    "6": [
+      {
+        "theta": 0.0001,
+        "loss_over_kappa": 0.20766309568936117,
+        "limit": 0.20609929155556622
+      },
+      {
+        "theta": 1e-06,
+        "loss_over_kappa": 0.20611499856575405,
+        "limit": 0.20609929155556622
+      }
+    ]
+  }
+}
