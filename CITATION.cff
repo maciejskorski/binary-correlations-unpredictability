@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "binary-correlations-unpredictability: code and extended version"
+type: software
+authors:
+  - family-names: Skorski
+    given-names: Maciej
+    orcid: "https://orcid.org/0000-0003-2997-7539"
+  - family-names: Günlü
+    given-names: Onur
+    orcid: "https://orcid.org/0000-0002-0313-7788"
+repository-code: "https://github.com/maciejskorski/binary-correlations-unpredictability"
+license: MIT
+preferred-citation:
+  type: report
+  title: "Bridging Correlation Measures and Unpredictability: Sharp Bounds and Insights for TRNG Validation"
+  authors:
+    - family-names: Skorski
+      given-names: Maciej
+      orcid: "https://orcid.org/0000-0003-2997-7539"
+    - family-names: Günlü
+      given-names: Onur
+      orcid: "https://orcid.org/0000-0002-0313-7788"
+  year: 2026
+  institution:
+    name: "Cryptology ePrint Archive"
+  number: "2026/2783"
+  url: "https://eprint.iacr.org/2026/2783"
